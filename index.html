@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashfly Visual Analytics System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin-top: 10px; font-size: 16px; color: #ecf0f1; opacity: 0.9; }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            display: grid;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .card h2 { margin: 0 0 10px 0; font-size: 20px; color: #2c3e50; }
+        .card p { margin: 0; color: #7f8c8d; font-size: 14px; line-height: 1.5; }
+        
+        /* ตกแต่งแถบสีแต่ละเมนูให้ต่างกัน */
+        .card-1 { border-left-color: #3498db; } /* ฟ้า */
+        .card-2 { border-left-color: #e67e22; } /* ส้ม */
+        .card-3 { border-left-color: #17becf; } /* ฟ้าทะเล */
+
+        .footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #95a5a6;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Flashfly Strategic Performance Dashboard</h1>
+        <p>Visual Analytics System for Content Strategy Optimization</p>
+    </div>
+
+    <div class="container">
+        <a href="va_part1_macro_overview.html" class="card card-1" target="_blank">
+            <h2>ส่วนที่ 1: ภาพรวมการเติบโตและปริมาณคอนเทนต์ (Macro Overview)</h2>
+            <p>วิเคราะห์กระแสการมองเห็นรวม (Total Reach) ปริมาณการโพสต์ และประสิทธิภาพเฉลี่ยของแต่ละหมวดหมู่เนื้อหา เพื่อดูแนวโน้มการเติบโตของเพจ</p>
+        </a>
+
+        <a href="va_part2_posttype_strategy.html" class="card card-2" target="_blank">
+            <h2>ส่วนที่ 2: ประสิทธิภาพเชิงเปรียบเทียบตามรูปแบบเนื้อหา (Format Trade-off)</h2>
+            <p>เจาะลึกความคุ้มค่าของการทำคอนเทนต์แต่ละรูปแบบ (Photos, Links, Videos) เพื่อค้นหา "Hidden Gem" และ "Best Performers"</p>
+        </a>
+
+        <a href="va_part3_time.html" class="card card-3" target="_blank">
+            <h2>ส่วนที่ 3: ประสิทธิภาพตามช่วงเวลาและพฤติกรรมผู้ใช้งาน (Timing Efficiency)</h2>
+            <p>วิเคราะห์ช่วงเวลาที่เหมาะสมที่สุดในการโพสต์เนื้อหาแต่ละประเภท ทั้งในระดับวันในสัปดาห์ (Day of Week) และรายชั่วโมง (Hourly)</p>
+        </a>
+    </div>
+
+    <div class="footer">
+        Master's Degree Project in Data Science | 2026
+    </div>
+
+</body>
+</html>
